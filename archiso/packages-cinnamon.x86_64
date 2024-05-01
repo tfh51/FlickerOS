@@ -46,8 +46,8 @@ iw
 iwd
 jfsutils
 kitty-terminfo
-ldns
 less
+ldns
 lftp
 libfido2
 libusb-compat
@@ -132,9 +132,9 @@ zsh
 
 #Carli Desktop
 #carli-grub-poly-light
-#carli-grub-poly-dark
+carli-grub-poly-dark
 sddm
-#sddm-elegant-theme-git
+sddm-elegant-theme-git
 bash-completion
 carli-keyring
 cinnamon
@@ -186,5 +186,3 @@ gvfs-smb
 xdg-user-dirs-gtk
 lsb-release
 firefox
-carli-viper-grub-theme-git
-carli-sddm-viper-theme-git
