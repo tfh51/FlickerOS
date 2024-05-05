@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="carli"
-iso_label="carli-$(date +%Y%m)"
+iso_name="FlickerOS"
+iso_label="FlickerOS-$(date +%Y%m)"
 iso_publisher="Carli Linux <https://www.arcolinuxiso.com>"
-iso_application="Carli Linux Live/Rescue CD"
+iso_application="FlickerOS Linux Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')

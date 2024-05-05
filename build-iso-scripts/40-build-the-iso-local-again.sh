@@ -38,17 +38,17 @@ echo
 	#Let us set the desktop"
 	#First letter of desktop is small letter
 
-	desktop="cinnamon"
-	dmDesktop="cinnamon"
+	desktop="xfce4"
+	dmDesktop="xfce4"
 
 	#carliVersion='v21.12.02'
 
-	isoLabel='carli-'$(date +%Y.%m.%d)'-x86_64.iso'
+	isoLabel='Flickeros-'$(date +%Y.%m.%d)'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 77-1"
-	buildFolder=$HOME"/carli-build"
-	outFolder=$HOME"/Carli-Out"
+	buildFolder=$HOME"/Flickeros-build"
+	outFolder=$HOME"/Flickeros-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 
 	echo "################################################################## "
@@ -143,21 +143,21 @@ echo
 
 	#----------------------------------------------------------------------------------
 
-	package="carli-keyring"
+	#package="carli-keyring"
 
 	#checking if application is already installed or else install
-	if pacman -Qi $package &> /dev/null; then
+	#if pacman -Qi $package &> /dev/null; then
 
-			echo "################################################################"
-			echo "Carli keyring is already installed"
-			echo "################################################################"
+	#		echo "################################################################"
+	#		echo "Carli keyring is already installed"
+	#		echo "################################################################"
 
-	else
+	#else
 
-		wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-keyring-3.1-2-any.pkg.tar.zst -O /tmp/carli-keyring-3.1-2-any.pkg.tar.zst
-		sudo pacman -U --noconfirm --needed /tmp/carli-keyring-3.1-2-any.pkg.tar.zst
+	#	wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-keyring-3.1-2-any.pkg.tar.zst -O /tmp/carli-keyring-3.1-2-any.pkg.tar.zst
+	#	sudo pacman -U --noconfirm --needed /tmp/carli-keyring-3.1-2-any.pkg.tar.zst
 		
-	fi
+	#fi
 
 	# Just checking if installation was successful
 	if pacman -Qi $package &> /dev/null; then
@@ -176,20 +176,20 @@ echo
 
 	#----------------------------------------------------------------------------------
 
-	package="carli-mirrorlist"
+	#package="carli-mirrorlist"
 
 	#checking if application is already installed or else install
-	if pacman -Qi $package &> /dev/null; then
+	#if pacman -Qi $package &> /dev/null; then
 
-		echo "################################################################"
-		echo "Carli mirrorlist is already installed"
-		echo "################################################################"
+	#	echo "################################################################"
+	#	echo "Carli mirrorlist is already installed"
+	#	echo "################################################################"
 
-	else
+	#else
 
-		wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-mirrorlist-22.03-01-any.pkg.tar.zst -O /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
-		sudo pacman -U --noconfirm --needed /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
-	fi
+	#	wget https://github.com/arcolinuxiso/carli_repo/raw/master/x86_64/carli-mirrorlist-22.03-01-any.pkg.tar.zst -O /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
+	#	sudo pacman -U --noconfirm --needed /tmp/carli-mirrorlist-22.03-01-any.pkg.tar.zst
+	#fi
 
 	# Just checking if installation was successful
 	if pacman -Qi $package &> /dev/null; then
